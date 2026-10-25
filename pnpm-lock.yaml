@@ -156,8 +156,8 @@ dependencies:
     specifier: ^3.2.4
     version: 3.2.4(react@18.2.0)
   stripe:
-    specifier: ^13.8.0
-    version: 13.8.0
+    specifier: ^23.0.0
+    version: 23.0.0(@types/node@20.6.2)
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -5533,13 +5533,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dev: false
 
-  /qs@6.11.2:
-    resolution: {integrity: sha512-tDNIz22aBzCDxLtVH++VnTfzxlfeK5CbqohpSqpJgj1Wg/cQbStNAz3NuqCs5vV+pjBsK4x4pN9HlVh7rcYRiA==}
-    engines: {node: '>=0.6'}
-    dependencies:
-      side-channel: 1.0.4
-    dev: false
-
   /querystringify@2.2.0:
     resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
     dev: false
@@ -6171,12 +6164,16 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /stripe@13.8.0:
-    resolution: {integrity: sha512-QFOOeaEwNOAj4k/T9OtSb9sKx9oLVI5y9HrJJn3XN9RJYKGAuE+fMD+rHA5u9ILmf3FDx99jaEvVvykftJtBGA==}
-    engines: {node: '>=12.*'}
+  /stripe@23.0.0(@types/node@20.6.2):
+    resolution: {integrity: sha512-MDE2A5ZVVluYURORaZEVghSmnLJc3w6aHAlZSxDQMsOjOb3V0O6ro/CiaeFlJS4N7uIVmsg98ocRsPmUK6YfyA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@types/node': '>=20'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
     dependencies:
       '@types/node': 20.6.2
-      qs: 6.11.2
     dev: false
 
   /strtok3@6.3.0:
